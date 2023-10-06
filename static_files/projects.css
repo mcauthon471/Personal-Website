@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background-image: url(/static_files/Images/about-landing.jpg) ;
+    background-size: cover;
+}
+.topnav{
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    opacity: 90%;
+    justify-content: space-between;
+    background-image: none;
+    z-index: 2;
+}
+.topnav a {
+    float:left;
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    height:1in;
+    width:100%;
+
+}
+.topnav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-image: none;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+.topnav ul li{
+    list-style-type: none;
+    overflow: hidden;
+    background-image: none;
+    display: block;
+    position: relative;
+    
+}
+.topnav img{
+    height: 100%;
+    overflow-x: auto;
+    background-image: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav a.active {
+    background-color: #8F37A3;
+}
+h1{
+    position: relative;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 150px;
+    font-family: "Times New Roman", Times, serif;
+    opacity: 100%;
+    z-index: 1;
+    background: none;
+}
+h2{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+    opacity: 100%;
+    z-index: 1;
+    background: none;
+}
+.project {
+    position: relative;
+    background: #000000;
+    text-align: center;
+    margin: 25px auto;
+    opacity: 90%;
+    width: 75%;
+    height: fit-content;
+    border: 2px solid #FFFFFF ;
+    border-radius: 10px;
+    overflow: auto;
+    z-index: 1;
+}
+.project p {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    opacity: 100%;
+    z-index: 1;
+    background: none;
+    display: block;
+    height:auto;
+    padding-bottom: 10px;
+    
+}
+
+.break{
+    background-color: #FFFFFF;
+    height: 2px;
+    width: 100%;
+    opacity: 100%;
+    z-index: 1;
+    background-image: none;
+}
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+section{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+span{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #FADF71;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
+    animation: animate 3s linear infinite;    
+
+}
+span::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#FADF71,transparent);
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+span:nth-child(1){
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+span:nth-child(2){
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+span:nth-child(3){
+    top: 80;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+span:nth-child(4){
+    top: 0;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+span:nth-child(5){
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+span:nth-child(6){
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+span:nth-child(7){
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+span:nth-child(8){
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+span:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+span:nth-child(9){
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.75s;
+}

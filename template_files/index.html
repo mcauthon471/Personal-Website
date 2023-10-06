@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="static_files/stylesheet.css">
+
+    <head>
+        <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+        <title>Home</title>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three":"https://www.unpkg.com/three@0.156.1/build/three.module.js",
+                    "three/addon": "https://unpkg.com/three@0.156.1/examples/jsm/",
+                    "datgui": "https://cdn.jsdelivr.net/npm/dat.gui@0.7.9/build/dat.gui.module.js"
+                }
+            }
+        </script>
+    </head>
+    <body>
+    <script type="module"src="../static_files/js/script.js"></script>
+    <div class="landing">
+        
+        <canvas></canvas>
+        <h1>Welcome!</h1>
+    </div>
+    <div class="container">
+        <div class="constellation" id="one">
+            <p id="Title">The constellation Triangulum</p>
+                <a href="projects">
+                    <img class ="front" src="../static_files/Images/Triangulum_BlackBackground.png" alt="Triangulum_BlackBackground">
+                    <img class="back" src="../static_files/Images/Triangulum_WhiteBackground.png" alt="Triangulum_WhiteBackground">
+                </a>
+            <body>
+                <p>The ancient greeks used it symbolize change. Follow this to find my projects.</p>
+            </body>
+        </div>
+        <div class="constellation" id="two">
+            <p id="Title">The North Star</p>
+                <a href="/">
+                    <img class="front"src="../static_files/Images/North Star_Black Background.png" alt="North Star">
+                    <img class="back"src="../static_files/Images/North Star_White Background.png" alt="North Star">
+                </a>
+            <body>
+                <p>Used as a navigation tool since the 5th century. Follow this to take you to my home page.</p>
+            </body>
+        </div>
+        <div class="constellation" id="three">
+            <p id="Title">The constellation Pictor</p>
+                <a href="about">
+                    <img class="front"src="../static_files/Images/Pictor-Blackbackground.png" href="/about" alt="Pictor">
+                    <img class="back"src="../static_files/Images/Pictor-whitebackground.png" href="/about" alt="Pictor">
+                </a>
+            <body>
+                <p>"Pictor" latin for painter. Follow this to learn more about me.</p>
+            </body>
+        </div>
+    </div>
+    </body>
+</html>
