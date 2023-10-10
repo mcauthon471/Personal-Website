@@ -26,7 +26,16 @@
     
     <div id="projects">
         <h1>Projects</h1>
+        {% for item in db_items %}
         <div class="project">
+            <a href={{item.url}}>
+                <h2>{{item.title}}</h2></a>
+            <div class="break"></div>
+            <p>Status: {{item.status}} | Skills: {{item.skills}}</p>
+            <p>{{item.description}}</p>
+        </div>
+        {%endfor%}
+        <!-- <div class="project">
             <a href="https://github.com/mcauthon471/Portfolio/tree/main/Basic%20Cpu%20Process">
             <h2>Basic Cpu Process</h2></a>
             <div class="break"></div>
@@ -48,7 +57,7 @@
             <div class="break"></div>
             <p>Status: Future | Skills: Python</p>
             <p>A github webscraper, connecting to Github via API and using Python to grab repository data and upload it to the projects tab of my Portfolio website. Automatically creating new project tabs.</p>
-        </div>
+        </div> -->
     </div>
     <body>
         <section>
